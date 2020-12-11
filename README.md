@@ -30,26 +30,26 @@ It provides not only standard operating system services (hardware abstraction, c
 
 ROS’ philosophy can be summarised in the following five main principles:
 
-Peer-to-Peer
-Tools-based (microkernel)
-Multi-language
-Thin
-Free and open source.
-Covering each point in turn:
+- Peer-to-Peer
+- Tools-based (microkernel)
+- Multi-language
+- Thin
+- Free and open source.
+- Covering each point in turn:
 
-Peer to Peer: A sufficiently complex robot comprises several onboard computers or boards connected via Ethernet, plus sometimes offboard computers for intensive computation tasks. A peer-to-peer architecture coupled to a buffering system and a lookup system (a name service called ‘master’ in ROS), enables each component to dialogue directly with any other, synchronously or asynchronously as required.
+**Peer to Peer**: A sufficiently complex robot comprises several onboard computers or boards connected via Ethernet, plus sometimes offboard computers for intensive computation tasks. A peer-to-peer architecture coupled to a buffering system and a lookup system (a name service called ‘master’ in ROS), enables each component to dialogue directly with any other, synchronously or asynchronously as required.
 
-Multi-language: ROS is language-neutral, and can be programmed in various languages. The ROS specification works at the messaging layer. Peer-to-peer connections are negotiated in XML-RPC, which exists in a great number of languages. To support a new language, either C++ classes are re-wrapped (which was done for the Octave client, for example) or classes are written enabling messages to be generated. These messages are described in IDL (Interface Definition Language).
+**Multi-language**: ROS is language-neutral, and can be programmed in various languages. The ROS specification works at the messaging layer. Peer-to-peer connections are negotiated in XML-RPC, which exists in a great number of languages. To support a new language, either C++ classes are re-wrapped (which was done for the Octave client, for example) or classes are written enabling messages to be generated. These messages are described in IDL (Interface Definition Language).
 
-Tools-based: Rather than a monolithic runtime environment, ROS adopted a microkernel design, which uses a large number of small tools to build and run the various ROS components. As you cover the ROS tutorials, you will learn to use several commands used to manipulate nodes and messages. Each command is in fact an executable. The advantage of this system is that a problem with one executable does not affect the others, which makes the system more robust and flexible than a system based on a centralised runtime environment.
+**Tools-based**: Rather than a monolithic runtime environment, ROS adopted a microkernel design, which uses a large number of small tools to build and run the various ROS components. As you cover the ROS tutorials, you will learn to use several commands used to manipulate nodes and messages. Each command is in fact an executable. The advantage of this system is that a problem with one executable does not affect the others, which makes the system more robust and flexible than a system based on a centralised runtime environment.
 
-Thin: To combat the development of algorithms that are entangled to a lesser or greater degree with the robotics OS and are therefore hard to reuse subsequently, ROS developers intend for drivers and other algorithms to be contained in standalone executables. This ensures maximum reusability and, above all, keeps its size down. This method makes ROS easy to use, the complexity being in the libraries. This arrangement also facilitates unit testing. Lastly, ROS uses code (drivers and algorithms) from other open source projects:
+**Thin**: To combat the development of algorithms that are entangled to a lesser or greater degree with the robotics OS and are therefore hard to reuse subsequently, ROS developers intend for drivers and other algorithms to be contained in standalone executables. This ensures maximum reusability and, above all, keeps its size down. This method makes ROS easy to use, the complexity being in the libraries. This arrangement also facilitates unit testing. Lastly, ROS uses code (drivers and algorithms) from other open source projects:
 
-Player/Stage project simulators
-Image processing and artificial vision libraries from OpenCV
-Planning algorithms from OpenRave
-etc
+- Player/Stage project simulators
+- Image processing and artificial vision libraries from OpenCV
+- Planning algorithms from OpenRave
+
 For a full list of the available algorithms, visit: http://www.ros.org/wiki/StackList
 
-Free and open source: We have already explained the reasons for this choice. Note however that the architecture chosen is consistent with that choice. ROS passes data between modules using inter-process communications and, as a result, modules do not need to be linked within a single process, thereby making the use of different licences a possibility.
+**Free and open source: We have already explained the reasons for this choice. Note however that the architecture chosen is consistent with that choice. ROS passes data between modules using inter-process communications and, as a result, modules do not need to be linked within a single process, thereby making the use of different licences a possibility.**
 
