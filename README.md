@@ -112,3 +112,8 @@ The concepts brought together in ROS under the name of â€œROS Computation Graphâ
 ## Bags
 - Bags are formats for storing and playing back message data. This mechanism makes it possible, for example, to collect data measured by sensors and subsequently play it back as many times as desired to simulate real data. It is also a very useful system for debugging a system after the event.
 - The rosbag tool can be used to display data saved in bag files in graphical form
+
+# URDF
+- ROS provides other concepts that we will be able to explore in a further article. Mention should nevertheless be made of (another) interesting contribution to robotics from ROS in the shape of URDF (Unified Robot Description Format), an XML format used to describe an entire robot in the form of a standardised file. Robots described in this way can be static or dynamic and the physical and collision properties can be added to it.
+- Besides the standard, ROS offers several tools used to generate, parse or check this format.
+- URDF is used by the Gazebo simulator, for example, to represent the robot.
