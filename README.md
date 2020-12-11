@@ -132,3 +132,10 @@ As we said earlier, ROS is a collection of tools and algorithms. Some are much-u
 ROS’ standard APIs are available from: http://www.ros.org/wiki/APIs
 To browse through the packages available (more than 2,000 of them!): http://www.ros.org/browse/list.php
 
+# ROS Installation
+
+# Resources
+- www.ros.org
+- http://www.willowgarage.com/
+- https://code.ros.org/gf/
+- Generation Robots (http://www.generationrobots.com)
