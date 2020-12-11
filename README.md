@@ -24,8 +24,8 @@ It would appear that Willow Garage wishes to build the robotics community rather
 
 Four reasons to believe that Willow Garage will succeed according to the singularityhub.com website:
 
--They want to provide resources to avoid reinventing the wheel, in order to speed up robotics research;
--They have the necessary funds;
--They have the attention of the research community;
--They want to encourage the roll-out of their technology free of charge, before thinking of earning money.
+- They want to provide resources to avoid reinventing the wheel, in order to speed up robotics research;
+- They have the necessary funds;
+- They have the attention of the research community;
+- They want to encourage the roll-out of their technology free of charge, before thinking of earning money.
 
