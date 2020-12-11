@@ -19,4 +19,3 @@ They have the necessary funds;
 They have the attention of the research community;
 They want to encourage the roll-out of their technology free of charge, before thinking of earning money.
 
-
