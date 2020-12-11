@@ -63,3 +63,20 @@ Rosjava (http://code.google.com/p/rosjava/) is something different from the Java
 3. **ROS-compatible robots:**
 The list of ROS-compatible robots grows constantly. For a full list, visit the Willow Garage website at http://www.ros.org/wiki/Robots
 However, it is worth mentioning the best-known, namely NAO, Lego Mindstorms NXT, IRobot Roomba, TurtleBot and last but definitely not least, Willow Garage’s iconic PR2.
+
+# The ROS file system
+
+ROS resources are organised into a hierarchical structure on disc. Two important concepts stand out:
+
+1. The package: the fundamental unit within ROS software organisation. A package is a directory containing nodes (nodes are explained below), external libraries, data, configuration files and one xml configuration file called manifest.xml.
+2. The stack: a collection of packages. It offers a set of functionalities such as navigation, positioning, etc. A stack is a directory containing package directories plus a configuration file called stack.xml.
+
+In addition to these two very important notions, the idea of ‘a distribution’ is also worth noting, which is, as in Linux, a collection of versioned stacks.
+
+The latest ROS distributions to date:
+
+- ROS Fuerte, published on 23 April 2012
+- ROS Electric, published on 30 August 2011
+- ROS Diamondback, published on 2 March 2011
+- ROS C Turtle, published on 2 August 2010
+- ROS Box Turtle, published on 2 March 2010
