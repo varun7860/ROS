@@ -117,3 +117,18 @@ The concepts brought together in ROS under the name of “ROS Computation Graph�
 - ROS provides other concepts that we will be able to explore in a further article. Mention should nevertheless be made of (another) interesting contribution to robotics from ROS in the shape of URDF (Unified Robot Description Format), an XML format used to describe an entire robot in the form of a standardised file. Robots described in this way can be static or dynamic and the physical and collision properties can be added to it.
 - Besides the standard, ROS offers several tools used to generate, parse or check this format.
 - URDF is used by the Gazebo simulator, for example, to represent the robot.
+
+# Useful tools in ROS
+
+As we said earlier, ROS is a collection of tools and algorithms. Some are much-used during programming, simulation or executing robot tasks. Some of the tools and algorithms that the ROS programmer might often encounter are:
+
+- Stage: a 2D simulator
+- Gazebo: a 3D simulator
+- Rviz: a 3D visualisation system (unlike Gazebo, it does not include a physical motor)
+- The tf package, used to manipulate coordinates and transformation (if you have already dealt with inverse kinematics or matrix manipulation, then this package is going to make your life a great deal easier).
+- OpenCV: image processing
+- PointCloudLibrary: 3D environment reconstruction from laser measurements
+
+ROS’ standard APIs are available from: http://www.ros.org/wiki/APIs
+To browse through the packages available (more than 2,000 of them!): http://www.ros.org/browse/list.php
+
