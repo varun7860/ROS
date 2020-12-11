@@ -53,3 +53,13 @@ For a full list of the available algorithms, visit: http://www.ros.org/wiki/Stac
 
 **Free and open source: We have already explained the reasons for this choice. Note however that the architecture chosen is consistent with that choice. ROS passes data between modules using inter-process communications and, as a result, modules do not need to be linked within a single process, thereby making the use of different licences a possibility.**
 
+# The main principles of ROS
+1. Programming with ROS
+ROS is language-independent. At this time, three main libraries have been defined for ROS, making it possible to program ROS in Python, Lisp or C++. In addition to these three libraries, two experimental libraries are offered, making it possible to program ROS in Java or Lua.
+
+2. A word about ROSJAVA and Android
+Rosjava (http://code.google.com/p/rosjava/) is something different from the Java library found in ROS that we have just mentioned. Rosjava is a pure Java implementation of ROS created and maintained by Google and Willow Garage. Under Rosjava, instead of having a client library in Java giving access to the ROS core, which is written in C++, the Rosjava project totally rewrote the ROS core in Java. Google’s objective is to have a version of ROS that is fully compatible with Android, Google’s thin operating system. Rosjava can be used to control robots for which the operating system is not Linux, but Android (even if Android is based on Linux).
+
+3. ROS-compatible robots
+The list of ROS-compatible robots grows constantly. For a full list, visit the Willow Garage website at http://www.ros.org/wiki/Robots
+However, it is worth mentioning the best-known, namely NAO, Lego Mindstorms NXT, IRobot Roomba, TurtleBot and last but definitely not least, Willow Garage’s iconic PR2.
