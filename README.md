@@ -80,3 +80,36 @@ The latest ROS distributions to date:
 - ROS Diamondback, published on 2 March 2011
 - ROS C Turtle, published on 2 August 2010
 - ROS Box Turtle, published on 2 March 2010
+
+# Basic notions in ROS
+
+The basic principle of a robot operating system is to run a great number of executables in parallel that need to be able to exchange data synchronously or asynchronously. For example, a robotics OS needs to query robot sensors at a set frequency (ultrasound or infra-red distance sensor, pressure sensor, temperature sensor, gyroscope, accelerometer, cameras, microphone, etc.), retrieve this data, process it (carry out what is known as a data merge), pass it to processing algorithms (speech processing, artificial vision, SLAM – simultaneous localisation and mapping, etc.) and lastly control the motors in return. This whole process is carried out continuously and in parallel. Moreover, the robotics OS needs to manage contention to ensure efficient access to robot resources.
+
+The concepts brought together in ROS under the name of “ROS Computation Graph”, enabling these objectives to be reached, are described below. These are concepts used by the system as it is running, whereas the ROS File System described in the previous section is a static concept.
+
+## Nodes
+- ROS addresses this entire issue using some simple basic notions. The first of these is the notion of the node.
+- In ROS, a node is an instance of an executable. A node may equate to a sensor, motor, processing or monitoring algorithm, and so on. Every node that starts running declares itself to the Master. This comes back to the microkernel architecture, whereby each resource is an independent node.
+
+## Master
+- The Master is a node declaration and registration service, which makes it possible for nodes to find each other and exchange data. The Master is implemented via XMLRPC.
+
+The Master includes a heavily-used component called the Parameter Server, also implemented in the form of XMLRPC, and which is, as the name implies, a kind of centralised database within which nodes can store data and, in so doing, share system-wide parameters.
+
+## Topics
+- Data is exchanged asynchronously by means of a topic and synchronously via a service.
+- A topic is a data transport system based on a subscribe/publish system. One or more nodes are able to publish data to a topic, and one or more nodes can read data on that topic. 
+- A topic is, in a way, an asynchronous message bus, a little like an RSS feed. This notion of an asynchronous, many-to-many bus is essential in a distributed system situation.
+- A topic is typed, meaning that the type of data published (the message) is always structured in the same way. Nodes send and receive messages on topics.
+
+## Messages
+- A message is a compound data structure. A message comprises a combination of primitive types (character strings, Booleans, integers, floating point, etc.) and messages (a message is a recursive structure). For example, a node representing a robot servo motor will certainly publish its status on a topic (depending how you programmed it) with a message containing, for instance, an integer representing the motor’s position, a floating point for its temperature, another floating point for its speed, and so on.
+- The message description is stored in package_name/msg/myMessageType.msg. This file describes the message structure
+
+## Services
+- A topic is an asynchronous communication method used for many-to-many communication. A service meets a different kind of need; that for synchronous communication between two nodes. The idea is similar to that of a remote procedure call.
+- The service description is stored in package_name/srv/myServiceType.srv. This file describes the data structures for requests and responses.
+
+## Bags
+- Bags are formats for storing and playing back message data. This mechanism makes it possible, for example, to collect data measured by sensors and subsequently play it back as many times as desired to simulate real data. It is also a very useful system for debugging a system after the event.
+- The rosbag tool can be used to display data saved in bag files in graphical form
