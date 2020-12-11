@@ -3,6 +3,11 @@ This repo consists of all the projects of ros done by me till now.It covers up a
 about ros ,its history and its installation.Read it all to get you started. 
 For the Installation refer the section : Ïnstallation of ROS.
 
+# What is ROS?
+As the full name of Robot Operating System suggests, ROS is an operating system for robots. In the same way as operating systems for PCs, servers or standalone devices, ROS is a full operating system for service robotics.
+ROS is in fact a meta-operating system, something between an operating system and middleware.
+It provides not only standard operating system services (hardware abstraction, contention management, process management), but also high-level functionalities (asynchronous and synchronous calls, centralised database, a robot configuration system, etc.).
+
 # The history of ROS
 Many robot frameworks exist, produced for a specific reason, for prototyping purposes. ROS was intended to be more general-purpose, although its designers do not believe it to be the ultimate OS able to do everything.
 
