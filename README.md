@@ -1,4 +1,4 @@
-####The history of ROS
+#### The history of ROS
 Many robot frameworks exist, produced for a specific reason, for prototyping purposes. ROS was intended to be more general-purpose, although its designers do not believe it to be the ultimate OS able to do everything.
 
 ROS is developed and maintained by a Californian company, Willow Garage, formed in 2006 by Scott Hassan, one of Google’s first employees who was involved in the development of search engine technology and who was also behind Yahoo! Groups (eGroups, in fact, which became Yahoo! Groups). The President and CEO of Willow Garage is Steeve Cousins, previously at IBM.
