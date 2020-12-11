@@ -93,8 +93,7 @@ The concepts brought together in ROS under the name of â€œROS Computation Graphâ
 
 ## Master
 - The Master is a node declaration and registration service, which makes it possible for nodes to find each other and exchange data. The Master is implemented via XMLRPC.
-
-The Master includes a heavily-used component called the Parameter Server, also implemented in the form of XMLRPC, and which is, as the name implies, a kind of centralised database within which nodes can store data and, in so doing, share system-wide parameters.
+- The Master includes a heavily-used component called the Parameter Server, also implemented in the form of XMLRPC, and which is, as the name implies, a kind of centralised database within which nodes can store data and, in so doing, share system-wide parameters.
 
 ## Topics
 - Data is exchanged asynchronously by means of a topic and synchronously via a service.
