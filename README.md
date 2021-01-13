@@ -1,5 +1,5 @@
 # About this Repo
-This repo consists of all the projects of ros done by me till now.It covers up all the basics of ROS that a novice user needs to get started with it.Below are the general details
+This repo consists of all the projects of ros done by me till now. It covers up all the basics of ROS that a novice user needs to get started with it.Below are the general details
 about ros ,its history and its installation.Read it all to get you started. 
 For the Installation refer the section : Ïnstallation of ROS.
 
